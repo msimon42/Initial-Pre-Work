@@ -1,0 +1,45 @@
+<!--Learned about adding radio buttons to forms in html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Initial Pre-work: Basic HTML</title>
+</head>
+
+<body>
+
+  <h2>CatPhotoApp</h2>
+<main>
+
+  <p>View more <a href="#" target="_blank">cat photos</a>
+  <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+  <p>Things cats love the most:</p>
+  <ul>
+   <li>Yarn</li>
+   <li>Birds</li>
+   <li>Milk</li>
+ </ul>
+
+<p>Top 3 things cats hate:</p>
+<ol>
+  <li>Dogs</li>
+  <li>Vegetables</li>
+  <li>Being inside</li>
+</ol>
+
+<form action="/submit-cat-photo">
+  <input type="text" placeholder="cat photo URL" required>
+  <br>
+  <label for="indoor"><input type="radio" name="indoor-outdoor">Indoor</label>
+  <label for="outdoor"><input type="radio" name="indoor-outdoor">Outdoor</label>
+  <button type="submit">Submit</button>
+</form>
+
+</main>
+
+<footer>Copyright Cat Photo App</footer>
+
+</body>
+
+</html>
