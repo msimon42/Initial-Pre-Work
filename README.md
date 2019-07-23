@@ -4,36 +4,49 @@
 
 ## When we hit https://www.techtonic.com/ what happens? Don’t focus too much on architecture (Monolithic, SOA, Microservices, etc.). Try to focus more on how the web functions in general terms/steps.
 
-put your answer here
+First, the browser checks if techtonic.com's IP address is already in the browser cache. If not, the IP might be stored in the ISP's server. If the
+IP is not stored by the ISP's server, the ISP initiates a query to find the IP address for techtonic.com's server. Once the browser has the IP address, it establishes
+a connection with the server. The browser then sends an HTTP request to the server, and the server gives back a response. If nothing is wrong, the server sends back the
+web page's html code.
+
+
 
 ## From start to finish, how does data reach you to be rendered in the browser?
 
-put your answer here
+After the server receives a request, it responds by sending a string of text containing the html code. This data is contained in something called a "packet". These packets
+are sent all over the world through cables that run underground and on the ocean floor.
+
 
 ## What code is rendered in the browser?
 
-put your answer here
+The browser renders html code. If any scripts are contained in the html, the browser will request that code as well.
 
 ## What is the server-side code’s main function?
 
-put your answer here
+The main purpose of server-side code is to process and save user input. Server-side code is also used to render pages to the user.
+
 
 ## What is the client-side code’s main function?
 
-put your answer here
+The main purpose of client-side code is to manipulate the user interface. Client-side code runs in the browser and is much faster for the user than server-side code. The main disadvantage is that some browsers won't be able to run the code.  
+
 
 ## What is runtime?
 
-put your answer here
+Runtime is the software that executes while a program is running.
+
 
 ## How many instances of the client-side assets (HTML, CSS, JS, Images, etc.) are created?
 
-put your answer here
+One instance of the client side assets would be created each time someone requested the web page.
+
 
 ## How many instances of the server-side code are available at any given time?
 
-put your answer here
+This depends on how much memory the server has. If the server has more memory, more users can use the web application at the same time.  
+
+
 
 ## How many instances of the databases connected to the server application are created?
 
-put your answer here
+This largely depends on the type of application. If the user needs access to the database in order for the application to work properly, a new instance would be created.
